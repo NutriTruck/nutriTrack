@@ -49,7 +49,9 @@
   //add a realtime Listener
   firebase.auth().onAuthStateChanged(firebaseUser => { 
   	if(firebaseUser) {
-  		console.log(firebaseUser); 
+
+  		console.log(firebaseUser);
+      location.href = "landingpage.html" 
   	} else{
   		console.log('not logged in'); 
   	}
