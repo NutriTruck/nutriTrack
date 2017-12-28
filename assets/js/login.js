@@ -1,4 +1,5 @@
 // (function(){
+$(document).ready(function() {
 //Initialize Firebase 
   var config = {
     apiKey: "AIzaSyA7i_7yLZxHJxRmtHqvYFepccrvGxbrie8",
@@ -18,7 +19,7 @@
   var btnLogout = document.getElementById('btnLogout');
 
   //add login event on click listener
-  btnLogin.addEventListener('click', e =>{
+  btnLogin.addEventListener('click', e=>{
     event.preventDefault(); 
     alert("click");
   	//Get email and pass 
@@ -29,11 +30,11 @@
   	var promise = auth.signInWithEmailAndPassword(email, pass); 
   	promise.catch(e => console.log(e.message)); 
     console.log("hello"); 
-
   }); 
 
+
   //add signUp Event
-  btnSignUp.addEventListener('click', e =>{
+  btnSignUp.addEventListener('click', e=>{
   	//Get email and pass
     //TO DO: check for real emails 
     event.preventDefault(); 
@@ -46,8 +47,13 @@
   	promise.catch(e => console.log(e.message)); 
   }); 
 
+  btnLogout.addEventListener('click', e=>{
+    firebase.auth().signOut(); 
+    console.log('clicked')
+  }); 
+
   //add a realtime Listener
-  firebase.auth().onAuthStateChanged(firebaseUser => { 
+  firebase.auth().onAuthStateChanged(firebaseUser=> { 
   	if(firebaseUser) {
 
   		console.log(firebaseUser);
@@ -56,5 +62,7 @@
   		console.log('not logged in'); 
   	}
   }); 
+
+}); 
 
 // }()); 
