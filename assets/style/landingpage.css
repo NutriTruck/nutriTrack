@@ -55,3 +55,17 @@ button:hover {
     float: right;
     margin-right: 20px;
 }
+
+#browse-btn {
+  align-items:center; 
+  justify-content: center;
+  padding: 20px; 
+  align-content: center; 
+  margin: 
+}
+
+p{
+  color:white;
+  font: raleway;
+  font-size: 25px; 
+}
