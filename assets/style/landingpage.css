@@ -1,39 +1,71 @@
+
+*{  
+  margin:0;
+  padding:0;
+  font-family: 'Raleway', sans-serif;
+
+}
 body {
     max-width: 90%;
     background-color: #167bd7;
-    margin: 0;
+    margin: auto;
 }
 .main-container {
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0;
 }
-h3,
+h1{
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+
 h5,
-h3,
-.branding {
+h3 {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
+    font-family: raleway; 
 }
 label {
     color: white;
     font-size: 15px;
     margin-right: 10px;
 }
+
 .branding,
 .form-inline {
     float: right
 }
+
 #add-meal-btn,
 #reportGen-btn {
     margin: 10px 0;
 }
+
 button:hover {
     opacity: 0.8;
 }
+
 .largenav {
     margin: 0 20px;
 }
+
 .form-inline {
     float: right;
     margin-right: 20px;
+}
+
+#browse-btn {
+  align-items:center; 
+  justify-content: center;
+  padding: 20px; 
+  align-content: center; 
+  margin: 
+}
+
+p{
+  color:white;
+  font: raleway;
+  font-size: 25px; 
 }
