@@ -1,6 +1,6 @@
 # nutriTrack
 
 Here is the link:
-https://anytaali86.github.io/nutriTrack-1/
+https://nutritruck.github.io/nutriTrack/index.html
 
 Register to create your profile with NutriTrack
